@@ -1,0 +1,10 @@
+services:
+  notebook-env:
+    build: .
+    container_name: zoomcamp_practice
+    volumes:
+      - .:/app
+    ports:
+      - "8888:8888"
+    environment:
+      - PYTHONUNBUFFERED=1
